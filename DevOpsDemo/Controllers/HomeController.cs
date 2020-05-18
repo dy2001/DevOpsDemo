@@ -45,7 +45,7 @@ namespace DevOpsDemo.Controllers
             var file = formCollection.Files;
 			if (file.Count > 0 && file[0].Length > 1024000)
 			{
-                return Content("<script>alert('文件过大,请选择小于1000K的图片');history.back(-1)</script>", "text/html", Encoding.GetEncoding("GB2312"));
+                return Content("<script>alert('文件过大,请选择小于1000K的图片');history.back(-1)</script>", "text/html", Encoding.UTF8);
             }
 			if (file.Count > 0)
             {
