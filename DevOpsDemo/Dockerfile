@@ -1,4 +1,5 @@
-﻿FROM registry.cn-hangzhou.aliyuncs.com/yoyosoft/dotnet/core/sdk AS build
+﻿
+FROM registry.cn-hangzhou.aliyuncs.com/yoyosoft/dotnet/core/sdk AS build
 WORKDIR /source
 
 # copy csproj and restore as distinct layers
